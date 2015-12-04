@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="small_screen"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    
+    <com.somitsolutions.training.android.camera.Panel
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+         />
+        
+	<Button
+        android:id="@+id/buttonTakePicture"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/preview"
+        android:layout_alignParentBottom="true"
+        android:text="Take Picture" />
+
+</RelativeLayout>
